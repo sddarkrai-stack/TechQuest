@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="welcome">
+        <h2>WELCOME TO</h2>
+        <h1 class="logo">
+            TECH<span class="outline-text">QUEST</span>
+        </h1>
+        <p>Step into the digital world and test your tech-savviness.
+             Each challange will bring you closer to the future. Are you ready?
+            </p>
+
+             <div class="timer">
+                <span class="timer-icon">⏱</span>
+                <span id="welcome-countdown">00:20</span>
+                <span class="timer-label">TIME LEFT</span>
+             </div>
+
+             <button id="start-btn">START</button>
+             <button id="more-btn">MORE</button>
+        </div>
+
+             <section class="instructions" id="instructions">
+                <h2>MISSION BRIFFING</h2>
+                <h3>Before You Begin</h3>
+
+                <p class="instructions-intro">
+                    Get ready to test your tech knowledge.
+                    Read the rules before entering the challange.
+                </p>
+
+                <div class="rule">
+                    <span class="rule-number">01</span>
+                    <div>
+                        <h4>10 Questions</h4>
+                        <p>Answer 10 tech-based Questions.</p>
+                    </div>
+                </div>
+
+                <div class="rule">
+                    <span class="rule-number">02</span>
+                    <div>
+                        <h4>20 Seconds</h4>
+                        <p>Race against the clock on each Question.</p>
+                    </div>
+                </div>
+
+                <div class="rule">
+                    <span class="rule-number">03</span>
+                    <div>
+                        <h4>One Correct Answer</h4>
+                        <p>Choose the best answer from four answers.</p>
+                    </div>
+                </div>
+
+                <p class="instructions-note">
+                    ⚡ Stay sharp. Think fast. Prove your skills.
+                </p>
+
+                <button id="back-btn">BACK</button>
+             </section>
+
+             <section class="quiz-screen" id="quiz-screen">
+                <div class="quiz-timer">
+                    <span class="timer-icon">⏱</span>
+
+                    <div class="timer-info">
+                        <span class="timer-label">TIME LEFT</span>
+                        <span id="countdown">00:20</span>
+                    </div>
+                </div>
+                <div class="quiz-header">
+
+                    <span class="quiz-tag">TECHQUEST/CHALLENGE</span>
+                    <span class="Question-count">QUESTION 01/10</span> 
+                </div>
+
+                <div class="quiz-progress">
+                    <div class="quiz-progress-fill"></div>
+                </div>
+
+                <div class="Question-area">
+                    <p class="Question-category" id="Question-category">
+                        COMPUTER SCIENCE</p>
+
+                        <h2 id="Question">
+                            Which language is primarily used to structure a web page?
+                        </h2>
+
+                        <p class="question-hint">
+                            Select the correct answer to continue.
+                        </p>
+                </div>
+
+                <div class="answer-options">
+                    <button class="answer-btn">
+                        <span class="option-letter">A</span>
+                        <span>CSS</span>
+                    </button>
+
+                    <button class="answer-btn">
+                        <span class="option-letter">B</span>
+                        <span>HTML</span>
+                    </button>
+
+                    <button class="answer-btn">
+                        <span class="option-letter">C</span>
+                        <span>PYTHON</span>
+                    </button>
+
+                    <button class="answer-btn">
+                        <span class="option-letter">D</span>
+                        <span>JAVASCRIPT</span>
+                    </button> 
+                </div>
+
+                <DIV class="quiz-footer">
+                    <span class="score-display">SCORE:00</span>
+                    <button id="next-btn">NEXT QUESTION--></button>
+                </DIV> 
+             </section>
+
+             <section id="result-screen" class="result-screen">
+                <div class="result-content">
+                <div class="trophy">🏆</div>
+                <h1>QUIZ COMPLETED</h1>
+                <p class="result-message">
+                    You've completed the TECHQUEST challange!
+                </p>
+                <div class="final-score">
+                    <span id="final-score">00/10</span>
+                    <span id="final-percentage">0% Accuracy</span>
+                </div>
+                <h2 id="performance-message">Keep Learning!</h2>
+                <div id="performance-badge"
+                class="performance-badge">
+            TECHQUEST ROOKIE
+        </div>
+                <button id="retry-btn">RETRY QUIZ ↻</button>
+                <button id="home-btn">BACK TO HOME 🏠︎</button>
+                <button id="review-btn">REVIEW ANSWERS</button>
+                </div>
+             </section>
+
+              <div id="review-screen" style="display:none;">
+                    <h2>ANSWERS REVIEW</h2>
+                    <div id="review-content"></div>
+                    <button id="review-back-btn">BACK TO RESULTS</button>
+                </div>
+
+
+    </main>
+    
+
+ <script src="script.js"></script>   
+</body>
+</html>
